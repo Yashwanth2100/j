@@ -1,0 +1,81 @@
+import java.util.*;
+class Main
+{
+ public static void main(String[]args)
+ {
+   Scanner in= new Scanner(System.in);
+   System.out.println("Select the course code ");
+   System.out.print("1.CSE\n2.ECE\n3.MEC");
+   System.out.println("");
+   System.out.print("Enter the option:");
+   int z=in.nextInt();
+   double CGPA;
+ 
+ switch (z)
+ {
+   case 1:
+    System.out.print("Marks Scred in Maths=");
+    int a= in.nextInt();
+    System.out.print("Marks Scored in ECE=");
+    int b=in.nextInt();
+    System.out.print("Marks Scored in Physics=");
+    int c=in.nextInt();
+    System.out.print("Marks Scored in English=");
+    int d=in.nextInt();
+    System.out.print("Marks Scored in CSE=");
+    int e=in.nextInt();
+    System.out.println("Marks Scored in STS=");
+    int f=in.nextInt();
+    double A;
+    A=((a/10)+(b/10)+(c/10)+(d/10)+(e/10)+(f/10));
+    CGPA=A/6;
+    System.out.println("Your CGPA="+CGPA);
+    break;
+    
+    case 2:
+    System.out.print("Marks Scored in Maths=");
+    int g=in.nextInt();
+    System.out.print("Marks Scored in ECE=");
+    int h=in.nextInt();
+    System.out.print("Marks Scored in English=");
+    int i=in.nextInt();
+    System.out.print("MArks Scored innn CSE=");
+    int j=in.nextInt();
+    System.out.print("Marks Scored in STS= ");
+    int k=in.nextInt();
+    System.out.print("Marks scored in CHE=");
+    int l=in.nextInt();
+    System.out.print("Marks Scored in Environmental Science=");
+    int m=in.nextInt();
+    double B;
+    B=((g/10)+(h/10)+(i/10)+(j/10)+(k/10)+(l/10)+(m/10));
+    CGPA= B/7;
+     System.out.print("Your CGPA="+CGPA);
+     break;
+    
+    case 3:
+    System.out.print("Marks Scored in Maths+");
+    int n=in.nextInt();
+    System.out.print("Marks Scored in ECE=");
+    int o=in.nextInt();
+    System.out.print("Marks Scored in English=");
+    int p=in.nextInt();
+    System.out.print("Marks Scored in CSE=");
+    int q=in.nextInt();
+    System.out.print("Marks Scored in STS=");
+    int r=in.nextInt();
+    System.out.print("Marks Scored in MEC=");
+    int s=in.nextInt();
+    
+    double C;
+    C=((n/10)+(o/10)+(p/10)+(q/10)+(r/10)+(s/10));
+    CGPA =C/6;
+    System.out.print("Your CGPA = "+CGPA);
+    break;
+    
+    default:
+    System.out.print("PLEASE SELECT CORRECT OPTION");
+    break;
+    }
+  }
+}   
